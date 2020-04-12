@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>surveyforms</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Survey Form by Akhilesh</h1>
+            <p id="description" class="description text-center">
+                Please review my protofolio and take the survey to help me improve it!
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-area">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required />
+            </div>
+            <div class="form-area">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control"
+                    placeholder="How can I send you an electronic mail!" required />
+            </div>
+            <div class="form-area">
+                <label id="number-label" for="number">Number</label>
+                <input type="number" name="number" id="number" class="form-control"
+                    placeholder="Don't worry, I won't call you unless very urgent!" required />
+            </div>
+            <div class="form-area">
+                <label id="number-label" for="number">Age</label>
+                <input type="number" name="age" id="number" min="10" max="99" class="form-control"
+                    placeholder="If you are a women, I would rather dare not to ask!" />
+            </div>
+            <div class="form-area">
+                <p>What is your Master Role?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Rockstar Developer</option>
+                    <option value="job">Full Stack Engineer</option>
+                    <option value="learner">Deep Learning Ninja</option>
+                    <option value="preferNo">Devops captian</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-area">
+                <p>Would you recommend my Dev Letters?</p>
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio"
+                        checked />Yup!</label>
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio" />I'll think!</label>
+
+                <label><input name="user-recommend" value="not-sure" type="radio"
+                        class="input-radio" />Noooooooo!</label>
+            </div>
+            <div class="form-area">
+                <p>
+                    Any feature you liked from my Website?
+                </p>
+                <select id="most-like" name="mostLike" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="challenges">Home</option>
+                    <option value="projects">Tech Stack</option>
+                    <option value="community">Blogs</option>
+                    <option value="openSource">Project Showcase</option>
+                </select>
+            </div>
+            <div class="form-area">
+                <p>
+                    What specific part should I improve?
+                </p>
+                <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />Code
+                    Page</label>
+                <label>
+                    <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox" />Blog
+                    page</label>
+                <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox" />SaSS
+                    Designing and Components</label>
+                <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox" />Tech Stack
+                    Component</label>
+                <label><input name="prefer" value="open-source-community" type="checkbox"
+                        class="input-checkbox" />whoami? section</label>
+
+
+            </div>
+            <div class="form-area">
+                <p>How can we improve?</p>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placeholder="Enter your comment here..."></textarea>
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+
+    </div>
+    </form>
+    </div>
+
+</body>
+
+</html>
